@@ -146,7 +146,7 @@ int sheel_run(char **args) {
 	} else if (pid < 0) {
 		perror("fork error");
 	} else {
-		// wait for parent process
+		// wait for child process
 		wait(NULL);
 	}
 
